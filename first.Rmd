@@ -1,0 +1,10 @@
+---
+title: "first"
+author: "YT"
+date: "2023-07-31"
+output: html_document
+---
+```{r}
+plot(cars)
+```
+
