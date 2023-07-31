@@ -1,10 +1,29 @@
 ---
-title: "first"
-author: "YT"
+title: "check_github"
+author: "Yuta Tsukumo"
 date: "2023-07-31"
-output: html_document
+output: pdf_document
 ---
-```{r}
-plot(cars)
+
+install.packages("tinytex")
+tinytex::install_tinytex()
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+I will be modifying.
+
+```{r, test-plot}
+plot(cars, col = "red", xlab = "speed (mph)", ylab = "distance (miles)")
+```
+
+I will modify.
+
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
 ```
 
